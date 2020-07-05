@@ -63,7 +63,7 @@ pagination:
   enabled: true
 
 # Comments
-disqus_shortname: avishreekh # put your disqus shortname
+disqus_shortname: avishreekh-github-io # put your disqus shortname
 
 # -----------------------------------------------------------------------------
 # Collections

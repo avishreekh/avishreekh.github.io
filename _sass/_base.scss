@@ -25,7 +25,7 @@ a, table.table a {
 // Caption
 
 .caption {
-  font-size: 0.65rem;
+  font-size: 0.6rem;
   margin-top: 0.75rem;
   margin-bottom: 1.5rem;
   text-align: center;
@@ -186,26 +186,45 @@ footer.sticky-bottom {
 }
 
 .post-list {
-  margin: 0;
-  margin-bottom: 40px;
-  padding: 0;
-  li {
-    border-bottom: 1px solid $grey-color-light;
-    list-style: none;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
-    .post-meta {
-      color: $grey-color;
-      font-size: 0.875rem;
-      margin-bottom: 0;
-    }
-    a {
-      color: black;
+  margin-left: 0;
+  list-style: none;
+
+  > li {
+    margin-bottom: $spacing-unit;
+  }
+}
+
+.post-meta {
+  font-size: $small-font-size;
+  color: $grey-color;
+
+  a.post-tag {
+    border-radius: 20px;
+    border: 1px solid $grey-color;
+    color: $grey-color;
+    padding: 1px 5px;
+    margin-left: 5px;
+    &:hover {
+      border: 1px solid $brand-color;
       text-decoration: none;
-      &:hover {
-        color: $theme-color;
-      }
+      color: $brand-color;
     }
+  }
+}
+
+.post-desc {
+  display: block;
+  @include relative-font-size(1.0);
+}
+
+.post-link {
+  display: block;
+  @include relative-font-size(2);
+
+  &:hover {
+    color: $crimson-color-light;
+    text-decoration: none;
+    cursor: pointer;
   }
 }
 

@@ -4,6 +4,7 @@ title: Cross Entropy method in Reinforcement Learning
 date: 2020-07-04 11:12:00-0400
 description: A detailed tutorial on cross entropy method (with python code!)
 comments: true
+tags: reinforcement-learning cross-entropy-method
 ---
 
 If you have ever gathered the courage to explore the field of Reinforcement Learning, there are good chances that you found yourself lost in fancy vocabulary. Big words, names of complex algorithms with even more complex math behind them. But what if there were simpler, much more intuitive, and super-efficient algorithms out there that worked well?

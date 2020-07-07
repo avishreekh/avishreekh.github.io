@@ -80,7 +80,7 @@ The evaluate method for an agent takes a weight candidate as input, plays an epi
 <hr>
 If python code is not your thing and you love to read algorithms with math jargon, here is the pseudocode for you²:
 
-<div class="row mt-3">
+<div align="center" class="row mt-3">
     <div class="col-sm mt-3 mt-md-0">
         <img class="img-fluid rounded z-depth-1" src="{{ site.baseurl }}/assets/img/cem_rl_pseudocode.png">
     </div>

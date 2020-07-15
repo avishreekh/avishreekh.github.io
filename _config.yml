@@ -5,7 +5,7 @@
 title: Avishree Khare
 email: avishreekh@gmail.com
 description: > # this means to ignore newlines until "url:"
-  A simple, whitespace theme for academics. Based on [*folio](https://github.com/bogoli/-folio) design.
+  My digital home: Info, Writings, and others.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
@@ -88,7 +88,7 @@ google_analytics: UA-160848892-1 # out your google-analytics code
 # -----------------------------------------------------------------------------
 
 blog_name: Avishree Khare  # your blog must have a name for it to show up in the nav bar
-blog_description: a simple whitespace theme for academics
+blog_description: My digital home
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -270,13 +270,14 @@ jekyll-archives:
 display_tags: ["formatting", "images", "links", "math", "code", "blockquotes"] # these tags will be displayed on the front page of your blog
 display_categories: ["external-services"] # these categories will be displayed on the front page of your blog
 
+
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
 # -----------------------------------------------------------------------------
 
 scholar:
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+
+  last_name: Khare
 
   style: apa
   locale: en

@@ -12,12 +12,14 @@ profile:
     <!-- <p>123 your address street</p> -->
     <!-- <p>Your City, State 12345</p> -->
 
-news: false
+news: true
 social: true
 ---
-Welcome! I am Avishree Khare, a 3rd-year Computer Science undergraduate at BITS Pilani, K. K. Birla Goa campus. I am interested in Deep learning and its applications in Computer Vision. I have recently started exploring Reinforcement Learning, specifically in the contexts of Malware detection and Cognitive Neuroscience.
+Welcome! I am Avishree Khare, a final-year Computer Science undergraduate at BITS Pilani, K. K. Birla Goa campus. I am interested in Deep learning and its applications in Computer Vision. I have also recently started exploring Reinforcement Learning, specifically in the contexts of Malware detection and Cognitive Neuroscience.
 
-I am currently a summer intern at [Tessellate Imaging](https://www.tessellateimaging.com/) where I contribute to the [Monk](https://github.com/Tessellate-Imaging/monk_v1/tree/master/monk) library. Last summer, I interned at [CSIR-IGIB](https://www.igib.res.in/) last summer where I worked on Detection of Intracranial Hemorrhage from brain CT scans.
+I have been a summer intern at [Tessellate Imaging](https://www.tessellateimaging.com/) where I contributed to the [Monk](https://github.com/Tessellate-Imaging/monk_v1/tree/master/monk) library. Last summer, I interned at [CSIR-IGIB](https://www.igib.res.in/), where I worked on Detection of Intracranial Hemorrhage from brain CT scans.
+
+I enjoy reading and hence have a [little section](/books/) dedicated to my personal favourites (suggestions are always welcome :smile:). I also enjoy writing articles on subjects that interest me ([another little section](/blog/) dedicated to that).
 
 <!-- 
 Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com){:target="\_blank"}. You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.

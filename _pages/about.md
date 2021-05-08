@@ -19,7 +19,7 @@ social: true # includes social icons at the bottom of the page
 ---
 Welcome! I am Avishree Khare, a final-year Computer Science undergraduate at BITS Pilani, K. K. Birla Goa campus. I am interested in Deep learning and its applications in Computer Vision. I have also recently started exploring Reinforcement Learning, specifically in the contexts of Malware detection and Cognitive Neuroscience.
 
-I have been a summer intern at [Tessellate Imaging](https://www.tessellateimaging.com/) where I contributed to the [Monk](https://github.com/Tessellate-Imaging/monk_v1/tree/master/monk) library. Last summer, I interned at [CSIR-IGIB](https://www.igib.res.in/), where I worked on Detection of Intracranial Hemorrhage from brain CT scans.
+I am currently an SWE Intern at Apple India. I have been a summer intern at [Tessellate Imaging](https://www.tessellateimaging.com/) where I contributed to the [Monk](https://github.com/Tessellate-Imaging/monk_v1/tree/master/monk) library and at [CSIR-IGIB](https://www.igib.res.in/), where I worked on Detection of Intracranial Hemorrhage from brain CT scans.
 
 I enjoy reading and hence have a [little section](/books/) dedicated to my personal favourites (suggestions are always welcome :smile:). I also enjoy writing articles on subjects that interest me ([another little section](/blog/) dedicated to that).
 

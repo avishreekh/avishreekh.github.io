@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<title>Avishree Khare | CS330 Learnings | Introduction and Overview</title>
+<meta name="description" content="My digital home: Info, Writings, and others.
+">
+
+<!-- Bootstrap & MDB -->
+<link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.17.0/css/mdb.min.css" integrity="sha256-/SwJ2GDcEt5382i8zqDwl36VJGECxEoIcBIuoLmLR4g=" crossorigin="anonymous" />
+
+<!-- Fonts & Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"  integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ=" crossorigin="anonymous">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.6/css/academicons.min.css" integrity="sha256-uFVgMKfistnJAfoCUQigIl+JfUaP47GrRKjf6CTPVmw=" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
+
+<!-- Styles -->
+<link rel="shortcut icon" href="/assets/img/favicon.ico">
+<link rel="stylesheet" href="/assets/css/main.css">
+
+<link rel="canonical" href="/blog/2020/cs330-multi-task-and-meta-learning-lecture-1-introduction-and-overview/">
+
+<!-- Google verification -->
+<meta name="google-site-verification" content="5u4uolv2cd7ToSQ3yo5Fdw8iTnVAuWqGJSnTG43IyZY" />
+
+<!-- Open Graph -->
+
+<meta property="og:site_name" content="My digital home: Info, Writings, and others.
+" />
+<meta property="og:type" content="object" />
+<meta property="og:title" content="" />
+<meta property="og:url" content="https://avishreekh.github.io/blog/2020/cs330-multi-task-and-meta-learning-lecture-1-introduction-and-overview/" />
+<meta property="og:description" content="CS330 Learnings | Introduction and Overview" />
+<meta property="og:image" content="/assets/img/9.jpg" />
+
+
+  </head>
+
+  <body class="fixed-top-nav ">
+
+    <!-- Header -->
+
+    <header>
+
+    <!-- Nav Bar -->
+    <nav id="navbar" class="navbar navbar-light bg-white navbar-expand-sm fixed-top">
+    <div class="container">
+      
+        
+        <a class="navbar-brand title font-weight-lighter" href="https://avishreekh.github.io/"><span class="font-weight-bold">Avishree</span> Khare</a>
+      
+      <!-- Navbar Toogle -->
+      <button class="navbar-toggler collapsed ml-auto" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar top-bar"></span>
+        <span class="icon-bar middle-bar"></span>
+        <span class="icon-bar bottom-bar"></span>
+      </button>
+      <div class="collapse navbar-collapse text-right" id="navbarNav">
+        <ul class="navbar-nav ml-auto flex-nowrap">
+          <!-- About -->
+          <li class="nav-item ">
+            <a class="nav-link" href="/">
+              about
+              
+            </a>
+          </li>
+          
+          <!-- Blog -->
+          <li class="nav-item active">
+            <a class="nav-link" href="/blog/">
+              blog
+              
+            </a>
+          </li>
+          
+          <!-- Other pages -->
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          <li class="nav-item ">
+              <a class="nav-link" href="/books/">
+                Books
+                
+              </a>
+          </li>
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+</header>
+
+
+    <!-- Content -->
+
+    <div class="container mt-5">
+      
+
+<div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">CS330 Learnings | Introduction and Overview</h1>
+    <p class="post-meta">July 7, 2020
+      <span>
+          
+            
+            <a class="post-tag" href="/tags/multi-task-learning"><nobr>multi-task-learning</nobr>&nbsp;</a>
+          
+            
+            <a class="post-tag" href="/tags/meta-learning"><nobr>meta-learning</nobr>&nbsp;</a>
+          
+            
+            <a class="post-tag" href="/tags/cs330"><nobr>cs330</nobr>&nbsp;</a>
+          
+      </span>
+    </p>
+  </header>
+
+  <article class="post-content">
+    <p>This course (officially CS330: Multi-Task and Meta-Learning) has been taken by Prof. Chelsea Finn at Stanford. It deals with an in-depth analysis of multi-task and meta-learning, along with discussions on the practical applications of these concepts in various fields (RL, etc). The course is free to audit <a href="https://cs330.stanford.edu/">online</a> with lectures available on <a href="https://www.youtube.com/playlist?list=PLoROMvodv4rMC6zfYmnD7UG3LVvwaITY5">YouTube</a>.</p>
+
+<p>Why do I have blog entries on a course that already has an amazing instructor, free online lecture recordings, and slides? Well, I aim to do two things with this series: Firstly, I believe that these articles can serve as a good “recap” for the material taught in the course (so you can refer to these as notes). These are also fairly elaborate for those that do not (maybe) want to watch hour-long lectures and still understand the concepts to a decent extent. Secondly, writing these helps me evaluate my understanding of these topics (and so I learn better!). I hope you enjoy this and take away something from it :)</p>
+
+<hr />
+
+<h3 id="motivation">Motivation</h3>
+
+<p>Let’s begin by understanding the need for Multi-Task and Meta-learning. Do we really need these seemingly niche concepts? What problems are these trying to solve? Don’t existing approaches solve these problems?</p>
+
+<hr />
+
+<p><strong>Why is this important?</strong></p>
+
+<p>We wish to understand the working of the human brain by building agents that can learn different skills in real-life settings.</p>
+
+<div align="center"><i> Robots can teach us things about intelligence. </i></div>
+
+<hr />
+
+<p><strong>Don’t we already have Deep Learning models for this?</strong></p>
+
+<p>Yes. We already have extremely expressive models that can solve certain tasks efficiently, matching, and even surpassing human-level performance.</p>
+
+<div align="center"><i> Deep learning allows us to handle unstructured inputs (pixels, language, sensor readings, etc.) without hand-engineering features, with less domain knowledge. </i></div>
+
+<hr />
+
+<p><strong>What is the problem then?</strong></p>
+
+<p>These agents are “specialists” as they can perform extremely well on single-tasks. However, Single-Task learning is not scalable. When a robot is taught how to use a spatula to place an object inside a bowl, it very specifically learns to use “that spatula” to put “that object” into “that bowl”.</p>
+
+<div align="center"><i> Learning one task in one environment, starting from scratch, relies on detailed supervision and guidance.</i></div>
+
+<hr />
+
+<p><strong>Can’t we just give it more data?</strong></p>
+
+<p>We can. We can actually give it a lot of data, with different kinds of spatulas, different objects to pick, etc. However, this either requires a lot of effort (and time) or is just not possible in certain domains (for example, you cannot collect enough data to predict the occurrence of a rare disease).</p>
+
+<div align="center"><i> And that is the bottleneck faced by today's deep learning models: they need a lot of data to work well. </i></div>
+
+<hr />
+
+<p><strong>So, this is only a problem with small datasets right?</strong></p>
+
+<p>Not really. There are several other problems that exist. Some of them are as follows:</p>
+
+<ul>
+  <li><strong>Building a general-purpose AI system:</strong> This system would definitely need to solve more than one task (else it is not general-purpose)</li>
+  <li><strong>Long-tail data distributions:</strong> Maybe you have a lot of data, but this data is from the “very common instances” lot. There may be several other instances that are not very common. As such your data is said to have a long tail (this is actually more common than you’d think) in contrast to the more popular “Gaussian data picture”.</li>
+</ul>
+
+<div align="center" class="row mt-3">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/cs330_lec1_long_tail.png" />
+    </div>
+</div>
+<div class="caption">
+    Credits: CS330 Introduction and Overview
+</div>
+
+<ul>
+  <li><strong>Building agents that learn new tasks quickly:</strong> And quickly is the keyword here. You cannot “quickly” learn a new task from scratch. As such, you’d need to use (and hence have) some prior experience to learn quickly.</li>
+</ul>
+
+<p>So, how do we solve these problems? This is where the concepts of multi-task learning and meta-learning come into the picture.</p>
+
+<hr />
+
+<h3 id="understanding-learning">Understanding learning</h3>
+
+<p>In order to build generalist agents discussed above, we can at best draw inspiration from the way humans learn. Imagine that you need to learn how to drive. How would you go about acquiring this new skill? There will definitely be things that you will have to learn afresh, but you can adapt most of the things from similar experiences in your life before. Would you have to be told what roads are, what directions are, how the steering needs to be held? Most certainly not. You would know these things from your experience as a human so far!</p>
+
+<p>When we train neural networks to learn a new task, we are basically starting with a clean slate. It is analogous to teaching a toddler how to drive! We hence need mechanisms that can instill experience within neural networks to make them better generalists.</p>
+
+<hr />
+
+<h3 id="what-is-multi-task-learning">What is Multi-task learning?</h3>
+
+<p>Given a set of tasks, learn all tasks more quickly and more proficiently than learning them independently. Can this be any set of tasks? Well, no. The simplest constraint for this is that the tasks need to be somewhat similar. If you want to learn how to drive and how to chop onions, learning them together is no better than learning them independently because the tasks are not related at all. If you however want to learn how to ride a bike and how to drive a car, learning one definitely benefits the other.</p>
+
+<hr />
+
+<h3 id="what-is-meta-learning">What is Meta-Learning?</h3>
+
+<p>Given experience in some previous tasks, learn a new task more quickly or more efficiently. This follows the same constraint as before requiring the new task to share some similarities with the previous tasks.</p>
+
+<hr />
+
+<h3 id="what-is-the-difference-between-the-two">What is the difference between the two?</h3>
+
+<p>If you have some experience of riding a bike and you are asked to use that experience to learn how to drive a car, that is meta-learning. If instead you are required to simultaneously learn how to ride a bike and drive a car (benefiting from both the experiences), that is multi-task learning.</p>
+
+<p>Lastly, if we wish to compare tasks, how do we define a notion of similarity? In fact, how do we define a task in this respect?</p>
+
+<hr />
+
+<h3 id="what-is-a-task">What is a task?</h3>
+
+<p>Informally, a task does the following (a formal definition is given in the next lecture):</p>
+
+<p>Given a dataset \(D\) and a loss function \(L\), it optimizes on the loss function \(L\) and outputs a model \(f_{\theta}\) for mapping inputs \(x_{i}\) to their corresponding outputs \(y_{i}\) (where \((x_{i}, y_{i}) \in D\)).</p>
+
+<p>Hence, two tasks would be considered different if they differ in either the dataset \(D\) or the loss function \(L\) or both.</p>
+
+<p>Multi-task and Meta-Learning require tasks to share <em>some structure</em> in the sense that even if they do not appear similar on the surface, they do have certain underlying similarities. For example, opening a can and uncapping a water bottle are different tasks on the surface but use the same principle in practice.</p>
+
+<hr />
+
+<h3 id="doesnt-multi-task-learning-reduce-to-single-task-learning">Doesn’t Multi-Task Learning reduce to Single-Task Learning?</h3>
+
+<p>You could aggregate data from all the tasks to create a huge dataset (\(D = \bigcup D_{i}\)), sum all the individual losses to optimize for an aggregate loss (\(L = \sum L_{i}\)) and then create a single model for all the tasks, right? Yes, you can (and that is one approach to Multi-Task Learning). However, we can often perform better with the knowledge that the data is coming from different tasks.</p>
+
+<hr />
+
+<p><strong>As neural networks are universal function approximators, won’t they eventually figure out the differences between the tasks?</strong></p>
+
+<p>They would. But that would probably take a lot of time as the function would then become too complex to optimize for.</p>
+
+<hr />
+
+<h3 id="why-study-this-now">Why study this now?</h3>
+
+<ul>
+  <li>These algorithms are playing a fundamental, and increasing role in machine learning research. This is evident from the number of search queries and citations of associated papers.</li>
+  <li>Their success will be critical for the democratization of deep learning. Essentially, deep learning so far has only been able to (mostly) excel at tasks with huge amounts of data, which is not a very practical component. We need models that can work with much lesser amounts of data and still excel at these tasks and many more!</li>
+</ul>
+
+<hr />
+
+<p>That concludes this article (and lecture 1 from the course). Please let me know if there are other things that should have been addressed and also potential errors that could have crept in. Thank you for taking the time to read this article (I sincerely hope it helped you in some way).</p>
+
+<hr />
+
+<h3 id="references">References</h3>
+
+<p>[1] <a href="https://www.youtube.com/watch?v=0rZtSwNOTQo&amp;list=PLoROMvodv4rMC6zfYmnD7UG3LVvwaITY5">Video for Lecture 1 (Introduction &amp; Overview)</a></p>
+
+<p>[2] <a href="https://cs330.stanford.edu/slides/cs330_lecture1.pdf">Slides for Lecture 1 (Introduction &amp; Overview)</a></p>
+
+<hr />
+
+
+  </article>
+
+  
+    <div id="disqus_thread"></div>
+    <script type="text/javascript">
+      var disqus_shortname  = 'avishreekh-github-io';
+      var disqus_identifier = '/blog/2020/cs330-multi-task-and-meta-learning-lecture-1-introduction-and-overview';
+      var disqus_title      = "CS330 Learnings | Introduction and Overview";
+      (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+      })();
+    </script>
+    <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  
+
+</div>
+
+    </div>
+
+    <!-- Footer -->
+
+    
+<footer class="fixed-bottom">
+  <div class="container mt-0">
+    &copy; Copyright 2022 Avishree Khare.
+    Powered by <a href="http://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme. Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+
+    
+  </div>
+</footer>
+
+
+
+  </body>
+
+  <!-- Load Core and Bootstrap JS -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.4.0/umd/popper.min.js" integrity="sha256-OH05DFHUWzr725HmuHo3pnuvUUn+TJuj8/Qz9xytFEw=" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.17.0/js/mdb.min.js"  integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+<!-- Load Common JS -->
+<script src="/assets/js/common.js"></script>
+
+<!-- Code Syntax Highlighting -->
+<link rel="stylesheet" href="https://gitcdn.link/repo/jwarby/jekyll-pygments-themes/master/github.css" />
+
+
+<!-- Load KaTeX -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.css" integrity="sha256-V8SV2MO1FUb63Bwht5Wx9x6PVHNa02gv8BgH/uH3ung=" crossorigin="anonymous" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.11.1/katex.min.js" integrity="sha256-F/Xda58SPdcUCr+xhSGz9MA2zQBPb0ASEYKohl8UCHc=" crossorigin="anonymous"></script>
+<script src="/assets/js/katex.js"></script>
+
+
+
+<!-- Load Mansory & imagesLoaded -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/4.2.2/masonry.pkgd.min.js" integrity="" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+<!-- Project Cards Layout -->
+<script type="text/javascript">
+  // Init Masonry
+  var $grid = $('.grid').masonry({
+    gutter: 10,
+    horizontalOrder: true,
+    itemSelector: '.grid-item',
+  });
+  // layout Masonry after each image loads
+  $grid.imagesLoaded().progress( function() {
+    $grid.masonry('layout');
+  });
+</script>
+
+
+
+<!-- Enable Tooltips -->
+<script type="text/javascript">
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
+
+
+
+<!-- Google Analytics -->
+<script>
+(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+ga('create', 'UA-160848892-1', 'auto');
+ga('send', 'pageview');
+</script>
+
+
+
+</html>

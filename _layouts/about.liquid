@@ -33,7 +33,21 @@ layout: default
           %}
         {% endif %}
         {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
+          {{ page.profile.more_info }}
+          <div class="social">
+            <a href="mailto:akhare@seas.upenn.edu" title="email">
+              <i class="fa-solid fa-envelope" style="font-size: 26px"></i>
+            </a>
+            <a href="https://github.com/avishreekh" title="GitHub" style="padding-left:10px;">
+              <i class="fa-brands fa-github" style="font-size: 26px"> </i>
+            </a>
+            <a href="https://www.linkedin.com/in/avishreekh" title="LinkedIn" style="padding-left:10px;">
+                <i class="fa-brands fa-linkedin" style="font-size: 26px"></i>
+            </a>
+            <a href="https://scholar.google.com/citations?user={{site.scholar_userid}}" title="Google Scholar" style="padding-left:10px;">
+              <i class="ai ai-google-scholar" style="font-size: 26px"></i>
+            </a>
+          </div>
         {% endif %}
       </div>
     {% endif %}
@@ -42,6 +56,7 @@ layout: default
 
     <!-- News -->
     {% if page.news and site.announcements and site.announcements.enabled %}
+      <hr>
       <h2>
         <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
       </h2>
@@ -58,8 +73,9 @@ layout: default
 
     <!-- Selected papers -->
     {% if page.selected_papers %}
+      <hr>
       <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">publications</a>
       </h2>
       {% include selected_papers.liquid %}
     {% endif %}

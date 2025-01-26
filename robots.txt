@@ -1,1 +1,1 @@
-Sitemap: https://avishreekh.github.io/sitemap.xml
+User-agent: * Disallow: Sitemap: https://avishreekh.github.io/sitemap.xml

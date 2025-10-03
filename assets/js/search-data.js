@@ -9,7 +9,14 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "news-we-will-be-presenting-grace-at-fse-2023",
+  },{id: "nav-cv",
+          title: "cv",
+          description: "This is a description of the page. You can modify it in &#39;_pages/cv.md&#39;. You can also change or remove the top pdf download button.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/https:/avishreekh.github.io/assets/pdf/CV_2025.pdf";
+          },
+        },{id: "news-we-will-be-presenting-grace-at-fse-2023",
           title: 'We will be presenting GrACE at FSE 2023!',
           description: "",
           section: "News",},{id: "news-we-will-be-presenting-logicbreaks-at-three-neurips-2024-workshops-advml-frontiers-scifordl-and-sata",

@@ -15,7 +15,7 @@ news: false # includes a list of news items
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
 ---
-Hi! I am a second-year PhD student in Computer Science at the University of Pennsylvania, where I am fortunate to be advised by <a href="https://www.cis.upenn.edu/~alur/">Prof. Rajeev Alur</a>.
+Hi! I am a third-year PhD student in Computer Science at the University of Pennsylvania, where I am fortunate to be advised by <a href="https://www.cis.upenn.edu/~alur/">Prof. Rajeev Alur</a>.
 
 I am broadly interested in research topics at the intersection of Machine Learning
 and Formal Methods. My research currently aims to: 
